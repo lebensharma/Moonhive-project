@@ -159,6 +159,7 @@ def job_month():
     print(f"Made a folder {folder} in {add}")
 
 print("Initializing Schedule...")
+print('Waiting for a minute to make directory...')
 # address of current directory
 file_path = os.path.abspath(__file__)
 split = os.path.split(file_path)
