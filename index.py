@@ -19,7 +19,7 @@ def job_time():
     split = os.path.split(paste_path)
     folder = split[1]
     add = split[0]
-    print(f"Made a folder {folder} in {add}")
+    print(f"Made a folder '{folder}' in '{add}'")
 
 
 def job_minute():
@@ -47,7 +47,7 @@ def job_minute():
     split = os.path.split(paste_path)
     folder = split[1]
     add = split[0]
-    print(f"Made a folder {folder} in {add}")
+    print(f"Made a folder '{folder}' in '{add}'")
 
 def job_hour():
     def new_paste_path(add, x):
@@ -74,7 +74,7 @@ def job_hour():
     split = os.path.split(paste_path)
     folder = split[1]
     add = split[0]
-    print(f"Made a folder {folder} in {add}")
+    print(f"Made a folder '{folder}' in '{add}'")
 
 def job_day():
     def new_paste_path(add, x):
@@ -101,7 +101,7 @@ def job_day():
     split = os.path.split(paste_path)
     folder = split[1]
     add = split[0]
-    print(f"Made a folder {folder} in {add}")
+    print(f"Made a folder '{folder}' in '{add}'")
 
 
 def job_week():
@@ -129,7 +129,7 @@ def job_week():
     split = os.path.split(paste_path)
     folder = split[1]
     add = split[0]
-    print(f"Made a folder {folder} in {add}")
+    print(f"Made a folder '{folder}' in '{add}'")
 
 def job_month():
     def new_paste_path(add, x):
@@ -156,7 +156,7 @@ def job_month():
     split = os.path.split(paste_path)
     folder = split[1]
     add = split[0]
-    print(f"Made a folder {folder} in {add}")
+    print(f"Made a folder '{folder}' in '{add}'")
 
 print("Initializing Schedule...")
 print('Waiting for a minute to make directory...')
