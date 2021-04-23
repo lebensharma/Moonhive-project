@@ -6,7 +6,7 @@ import time
 def job_time():
     main_dir = 'A'
     copy_path = os.path.join(address, main_dir)
-    paste_path = new_paste_path(address, 1)
+    paste_path = 'Time @ 5 PM'
 
     files = ['a.txt', 'b.txt', 'c.txt', 'd.txt']
     os.mkdir(paste_path)
@@ -131,13 +131,13 @@ def job_month():
         file_dst = os.path.join(paste_path, file)
         shutil.copy(file_src, file_dst)
 
-
 # address of current directory
 file_path = os.path.abspath(__file__)
 split = os.path.split(file_path)
 address = split[0]
 
 # run the job every ...
+schedule.every().day.at("17:00").do(job_time)
 schedule.every(1).minute.do(job_minute)
 schedule.every(1).hour.do(job_hour)
 schedule.every(1).day.do(job_day)
