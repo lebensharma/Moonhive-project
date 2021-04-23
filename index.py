@@ -15,6 +15,11 @@ def job_time():
         file_src = os.path.join(copy_path, file)
         file_dst = os.path.join(paste_path, file)
         shutil.copy(file_src, file_dst)
+    
+    split = os.path.split(paste_path)
+    folder = split[1]
+    add = split[0]
+    print(f"Made a folder {folder} in {add}")
 
 
 def job_minute():
@@ -39,6 +44,10 @@ def job_minute():
         file_dst = os.path.join(paste_path, file)
         shutil.copy(file_src, file_dst)
 
+    split = os.path.split(paste_path)
+    folder = split[1]
+    add = split[0]
+    print(f"Made a folder {folder} in {add}")
 
 def job_hour():
     def new_paste_path(add, x):
@@ -62,6 +71,10 @@ def job_hour():
         file_dst = os.path.join(paste_path, file)
         shutil.copy(file_src, file_dst)
 
+    split = os.path.split(paste_path)
+    folder = split[1]
+    add = split[0]
+    print(f"Made a folder {folder} in {add}")
 
 def job_day():
     def new_paste_path(add, x):
@@ -84,6 +97,11 @@ def job_day():
         file_src = os.path.join(copy_path, file)
         file_dst = os.path.join(paste_path, file)
         shutil.copy(file_src, file_dst)
+    
+    split = os.path.split(paste_path)
+    folder = split[1]
+    add = split[0]
+    print(f"Made a folder {folder} in {add}")
 
 
 def job_week():
@@ -108,6 +126,10 @@ def job_week():
         file_dst = os.path.join(paste_path, file)
         shutil.copy(file_src, file_dst)
 
+    split = os.path.split(paste_path)
+    folder = split[1]
+    add = split[0]
+    print(f"Made a folder {folder} in {add}")
 
 def job_month():
     def new_paste_path(add, x):
@@ -131,6 +153,12 @@ def job_month():
         file_dst = os.path.join(paste_path, file)
         shutil.copy(file_src, file_dst)
 
+    split = os.path.split(paste_path)
+    folder = split[1]
+    add = split[0]
+    print(f"Made a folder {folder} in {add}")
+
+print("Initializing Schedule...")
 # address of current directory
 file_path = os.path.abspath(__file__)
 split = os.path.split(file_path)
